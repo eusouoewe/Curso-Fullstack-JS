@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: #fffafa;
+}
+
+.data {
+    font-family: 'Roboto', sans-serif;
+    color: #008080;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.data, h1, p {
+    padding-left: 30px;
+}
