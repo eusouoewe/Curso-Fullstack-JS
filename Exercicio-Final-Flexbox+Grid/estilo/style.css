@@ -1,0 +1,142 @@
+@charset'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, footer {
+    background-color: #181A1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    height: 80px;
+    padding: 0 30px;
+}
+
+.buttons > a > button, .button-top {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    margin: 0 10px;
+    padding: 2px 5px;
+    font-size: 16px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.buttons > a > button:hover, .button-top:hover {
+    border-bottom: 3px solid black;
+}
+
+.title {
+    text-align: center;
+    padding: 15px;
+    min-width: 100vw;
+}
+
+.main-content {
+    display: flex;
+    width: 93vw;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.main-content > .products {
+    display: grid;
+    width: 60vw;
+    gap: 15px;
+    grid-template-areas:
+    "product1 product2 product3"
+    "product4 product5 product6"
+    " product7 product8 product9";
+}
+
+.main-content > .products > .product > h4 {
+    text-align: center;
+}
+
+.main-content > .products > .product { 
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.main-content > .products > .product:hover {
+    outline: 2px solid #181A1B;
+}
+
+.product1 {
+    grid-area: product1;
+}
+
+.product2 {
+    grid-area: product2;
+}
+
+.product3 {
+    grid-area: product3;
+}
+
+.product4 {
+    grid-area:product4;
+}
+
+.product5 {
+    grid-area:product5;
+}
+
+.product6 {
+    grid-area:product6;
+}
+
+.product7 {
+    grid-area:product7;
+}
+
+.product8 {
+    grid-area:product8;
+}
+
+.product9 {
+    grid-area:product9;
+}
+
+h4 {
+    padding: 5px 0;
+}
+
+.img {
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cat {
+    width: 250px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.extras {
+    background-color: #181A1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+}
+
+.extras > .extra > h4, aside > h3 {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
