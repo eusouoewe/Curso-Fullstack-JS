@@ -1,4 +1,4 @@
-@charset'UTF-8';
+@charset 'UTF-8';
 
 * {
     margin: 0;
@@ -6,49 +6,53 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
 .header, footer {
     background-color: #181A1B;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
-    min-width: 100vw;
-    height: 80px;
+    min-height: 60px;
     padding: 0 30px;
+    gap: 8px 15px;
 }
 
-.buttons > a > button, .button-top {
-    background-color: transparent;
-    border: transparent;
-    border-radius: 5px;
+.buttons a, .backToTop {
+    gap: 15px;
+    margin: 0 5px;
+    text-decoration: none;
     color: white;
-    margin: 0 10px;
-    padding: 2px 5px;
-    font-size: 16px;
-    transition: .6s;
-    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: .4s;
 }
 
-.buttons > a > button:hover, .button-top:hover {
-    border-bottom: 3px solid black;
+.buttons > a:hover, .backToTop:hover {
+    border-bottom:  2px solid black;
 }
 
 .title {
     text-align: center;
     padding: 15px;
-    min-width: 100vw;
 }
 
 .main-content {
-    display: flex;
-    width: 93vw;
-    justify-content: space-between;
-    margin: 20px 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 20px;
 }
 
 .main-content > .products {
     display: grid;
-    width: 60vw;
-    gap: 15px;
+    width: 100%;
+    height: 100%;
     grid-template-areas:
     "product1 product2 product3"
     "product4 product5 product6"
@@ -63,11 +67,12 @@
     width: 350px;
     border-radius: 10px;
     text-align: center;
+    margin: 0 0 20px 0;
     transition: .5s ease;
 }
 
 .main-content > .products > .product:hover {
-    outline: 2px solid #181A1B;
+    box-shadow: 1px 1px 4px #181A1B
 }
 
 .product1 {
@@ -125,13 +130,25 @@ h4 {
     cursor: pointer;
 }
 
-.extras {
+.main-content > .extras {
     background-color: #181A1B;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vh;
+    width: 100%;
+    margin: 0 20px 20px 0;
+}
+
+.extras .extra {
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.extras .extra:hover {
+    border: 1px solid gainsboro;
 }
 
 .extras > .extra > h4, aside > h3 {
