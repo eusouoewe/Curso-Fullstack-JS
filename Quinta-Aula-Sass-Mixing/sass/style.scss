@@ -1,0 +1,15 @@
+@mixin text($color, $font-size, $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+
+.text {
+    h1 {
+        @include text(#ff4043, 34px, Trebuchet MS);
+    }
+    p {
+        @include text(blue, 22px, sans-serif);
+    }
+}
