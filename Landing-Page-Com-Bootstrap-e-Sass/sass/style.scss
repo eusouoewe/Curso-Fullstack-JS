@@ -1,0 +1,64 @@
+@charset'UTF-8';
+$background-color: #131212f1;
+$button-color: #ff0043;
+$text-color: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../Imagens/backgroundLp.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $text-color;
+}
+
+.container1 {
+    background-color: $background-color;
+    width: 450px;
+    height: auto;
+}
+
+.topLogo {
+    width: 250px;
+    margin: 20px auto;
+}
+
+.paragraph {
+    margin: 8px 0;
+}
+
+.btnSend {
+    color: $button-color;
+    border: 1px solid $button-color;
+
+    &:hover {
+        background-color: $button-color;
+        color:$text-color;
+    }
+}
+
+.footer {
+    margin: 20px auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        background-repeat: repeat;
+    }
+}
